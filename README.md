@@ -1,2 +1,3 @@
-# rmi-java
-Invocación de Métodos Remotos (RMI)
+# **Invocación de Métodos Remotos (RMI)**
+
+Al igual que con los RPC (Remote Procedure Call o Llamada a Procedimientos Remotos) de C en linux, es posible hacer que un programa en java llame a métodos de objetos que están instanciados en otro programa distinto, incluso que estén corriendo en otra máquina conectada en red. Estos métodos, aunque los llamemos desde este ordenador, se ejecutan en el otro. Como se comentó en el RPC, este sistema tiene la ventaja de que si, por ejemplo, tenemos un ordenador capaz de realizar cuentas muy deprisa y otro capaz de dibujar gráficos maravillosos y además necesitamos hacer un programa con muchas cuentas y muchos gráficos, podemos implementar en el ordenador de las cuentas aquellas clases que echan cuentas, en el ordenador de gráficos aquellas clases de pintado y hacer que cada ordenador haga lo que mejor sabe hacer. Cuando al hacer un gráfico necesitemos echar cuentas, llamaremos a la clase remota que echa las cuentas, y estas se harán en el ordenador de las cuentas, devolviendo el resultado al de los gráficos. [Fuente](http://www.chuidiang.org/java/rmi/rmi.php)
