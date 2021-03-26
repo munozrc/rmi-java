@@ -19,7 +19,7 @@ public class Server {
 
       @Override
       public float restar(float a, float b) throws RemoteException {
-        return a + b;
+        return a - b;
       }
 
       @Override
